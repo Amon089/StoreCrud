@@ -1,0 +1,36 @@
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  background: var(--black);
+  color: var(--white);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  transition: 0.3s;
+  margin-left: 100px;
+}
+
+.btn:hover {
+  background: #222;
+}
+
+/* PRODUCT CARD */
+.product-card {
+  background: var(--gray);
+  border-radius: var(--radius);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.price {
+  font-weight: 700;
+}

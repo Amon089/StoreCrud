@@ -1,0 +1,14 @@
+.container {
+  max-width: var(--container);
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+section {
+  padding: 4rem 0;
+}
