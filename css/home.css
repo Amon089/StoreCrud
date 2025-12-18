@@ -125,6 +125,7 @@
   text-align: center;
   margin-bottom: 2rem;
 }
+
 .products__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -136,6 +137,22 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
+}
+.line {
+  /* 1. Define el grosor y color de la línea */
+  border-top: 1.5px solid #cccccc94; 
+  
+  /* 2. Hazlo un bloque para que respete el ancho */
+  display: block; 
+  
+  /* 3. Define que cubra el 50% del ancho */
+  width: 150dvh; 
+  
+  /* 4. Centra el bloque horizontalmente */
+  margin: 0 auto; 
+
+  /* 5. El padding y border-radius son opcionales según el estilo */
+  padding: 0; 
 }
 
 .category-card {
@@ -157,6 +174,47 @@
   font-weight: 600;
 }
 
+.price{
+  color: #111;
+  font-weight: bold;
+}
+.old_price{
+  color: rgba(101, 101, 101, 0.899);
+  text-decoration: line-through;
+  
+}
+.descount__logo{
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4px 8px;
+  border-radius: 999px;
+
+  
+  color: #ff3333;
+  background-color: #ff333338;
+}
+
+.view_boton{
+  text-align: center;
+  color: #000000;
+  background-color: #cccccc94;
+
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+
+
+  padding: 4px 8px;
+  border-radius: 999px;
+  
+}
+
 .testimonials__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -171,12 +229,23 @@
 .newsletter {
   background: var(--black);
   color: var(--white);
+
+  display: block;
+  width: fit-content;
+
+  margin:0  auto;
+  padding: 70px;
+  
+  border-radius: 40px;
+  font-size: 25px;
+  
 }
 .newsletter__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  
 }
 .newsletter input {
   padding: 0.7rem;
@@ -192,6 +261,8 @@
   background: #111;
   color: var(--white);
   padding: 3rem 0;
+  overflow: hidden;
+  height: 60vh;
 }
 .footer__grid {
   display: grid;
